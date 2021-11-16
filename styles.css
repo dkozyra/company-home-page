@@ -73,6 +73,14 @@ header .logo a img {
     margin: 5rem 0;
 }
 
+.statement h2 {
+  font-size: 2rem;
+}
+
+.statement h3, .statement p{
+  font-size: 1.5rem;
+}
+
 @media only screen and (max-width: 760px) {
   .statement h2 {
     font-size: 2.5rem;
