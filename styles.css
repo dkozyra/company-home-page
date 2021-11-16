@@ -69,16 +69,17 @@ header .logo a img {
 
 .statement{
     text-align: center;
+    font-family: 'Indie Flower';
     margin: 5rem 0;
 }
 
 @media only screen and (max-width: 760px) {
   .statement h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
-  .statement h3 p{
-    font-size: 1.5rem;
+  .statement h3, .statement p{
+    font-size: 2rem;
   }
 }
   
