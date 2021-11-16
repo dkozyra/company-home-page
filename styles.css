@@ -1,39 +1,22 @@
 /* Universal Styles */
 
 body {
-    margin: 0 auto;
-}
-
-.center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.image-container {
-    overflow: hidden;
-}
-  
-.image-container img {
-    display: block;
-    /* width: 100%; */
-    height: 200px;
-    width: 360px;
+  margin: 0 auto;
 }
 
 /* Header */
 
 header {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 1rem;
-    background-color: rgba(228, 220, 220, 0.979);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  background-color: rgba(228, 220, 220, 0.979);
 }
   
 header nav {
-    flex-basis: 100%;
-    margin-top: 1rem;
+  flex-basis: 100%;
+  margin-top: 1rem;
 }
   
 header nav ul {
@@ -43,7 +26,7 @@ header nav ul {
   
 header nav ul li {
     list-style: none;
-  }
+}
   
 header nav ul li a {
     font-size: 1.5rem;
@@ -62,7 +45,6 @@ header .logo a img {
 
 .sub-header {
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 37.5rem;
     background-repeat: no-repeat;
@@ -77,6 +59,12 @@ header .logo a img {
     background-color: rgba(228, 220, 220, 0.979);
 }
 
+@media only screen and (max-width: 760px) {
+  .sub-header-txt{
+    font-size: 1.5rem;
+  }
+}
+
 /* Statement */
 
 .statement{
@@ -84,6 +72,15 @@ header .logo a img {
     margin: 5rem 0;
 }
 
+@media only screen and (max-width: 760px) {
+  .statement h2 {
+    font-size: 2rem;
+  }
+
+  .statement h3 p{
+    font-size: 1.5rem;
+  }
+}
   
 /* Related Content */
 
@@ -93,19 +90,28 @@ header .logo a img {
     padding: 4rem 0;
     background-color: #f3f3f3;
     flex-wrap: wrap;
-  }
+}
   
 .feature {
-    /* flex: 1; */
     padding: 2rem;
     margin: 1.25rem;
     background-color: white;
 }
+
+.future .center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
   
 .feature .image-container {
-    /* width: 100%; */
-    /* height: 65%; */
-    margin: 0 auto;
+  margin: 0 auto;
+}
+
+.feature .image-container img {
+  display: block;
+  height: 200px;
+  width: 360px;
 }
   
 .feature .content {
@@ -120,159 +126,40 @@ header .logo a img {
     font-weight: bold;
     color: #4a4a4a;
 }
-  
-.feature h3 {
-    font-size: 1rem;
-    line-height: 1.2;
-    font-weight: 300;
-    color: #4a4a4a;
-}
-  
-@media only screen and (max-width: 890px) {
-    .feature h2 {
-        font-size: 1.125rem;
-        line-height: 1.3;
-        font-weight: normal;
-}
-  
-    .feature h3 {
-      font-size: .875rem;
-      line-height: 1.4;
-    }
-  }
-  
-  @media only screen and (max-width: 760px) {
-    #features-section {
-      flex-flow: column;
-      padding: 0;
-    }
-  
-    .feature {
-      margin: 0;
-      padding: 1.25rem 1rem 0 1rem;
-    }
-  }
 
-  /* Filters Section */
+/* Team Section */
+
+.team-section {
+  padding: 2rem 0;
+  background-repeat: no-repeat;
+  background-image: url('./assets/finance-background.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+}
+
+
+.team-section .team-heading h1 {
+  font-size: 3.5rem;
+  letter-spacing: 1.5rem;
+}
+
+.team-section .images-container {
+  max-width: 100%;
+  padding: 0 1%;
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
   
-  #filters-section {
-    padding: 4rem 0;
-    background-color: #4a4a4a;
-  }
+
   
-  #filters-section .content {
-    padding: 0 .625rem;
-    margin-bottom: 5rem;
-  }
-  
-  #filters-section .content h2 {
-    font-size: 2.25rem;
-    font-weight: bold;
-    color: white;
-  }
-  
-  #filters-section .content h3 {
-    font-size: 1rem;
-    line-height: 1.4;
-    font-weight: 300;
-    color: white;
-  }
-  
-  #filters-section .images-container {
-    max-width: 100%;
-    padding: 0 1%;
-    display: flex;
-  }
-  
-  @media only screen and (max-width: 760px) {
-    #filters-section {
-      padding: 1.5rem 0 0 0;
-    }
-  
-    #filters-section .content {
-      margin-bottom: 1rem;
-    }
-  
-    #filters-section .content h2 {
-      padding-bottom: .625rem;
-      font-size: 1.125rem;
-      line-height: 1.3;
-      font-weight: normal;
-    }
-  
-    #filters-section .content h3 {
-      font-size: .875rem;
-      line-height: 1.4;
-    }
-  
-    #filters-section .images-container {
-      padding: 0;
-    }
-  
-    #filters-section .extra {
-      display: none;
-    }
-  }
-  
-  /* Quotes Section */
-  
-  #quotes-section {
-    background-color: #f3f3f3;
-  }
-  
-  #quotes-section .content {
-    padding: 5rem 0;
-  }
-  
-  #quotes-section .quote {
-    padding-right: 1.875rem;
-    font-family: "Palatino", serif;
-    font-size: 1.875rem;
-    line-height: 1.1;
-    font-style: italic;
-    color: #4a4a4a;
-  }
-  
-  #quotes-section quote-citation {
-    height: 1.875rem;
-  }
-  
-  @media only screen and (max-width: 760px) {
-    #quotes-section content {
-      padding: 1.875rem .625rem;
-    }
-  
-    #quotes-section quote {
-      font-size: 1.5rem;
-      line-height: 1.4;
-    }
-  
-    #quotes-section quote-citation {
-      display: block;
-      padding-top: 1rem;
-      margin: auto;
-    }
-  }
-  
-  /* Footer */
-  
-  footer {
-    background-color: #9b9b9b;
-    padding: 1.5rem 2rem;
-  }
-  
-  footer .content {
-    color: white;
-    display: flex;
-    font-size: .75rem;
-  }
-  
-  footer .copyright {
-    flex-grow: 1;
-  }
-  
-  @media only screen and (min-width: 760px) {
-    footer .content {
-      font-size: .625rem;
-    }
-  }
+/* Footer */
+
+footer {
+  background-color: #9b9b9b;
+  padding: 1.5rem 2rem;
+}
