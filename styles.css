@@ -11,7 +11,8 @@ header {
   justify-content: center;
   flex-wrap: wrap;
   padding: 1rem;
-  background-color: rgba(228, 220, 220, 0.979);
+  /* background-color: rgba(228, 220, 220, 0.979); */
+  background-color: white;
 }
   
 header nav {
